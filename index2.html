@@ -15,24 +15,39 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-      
+       <div class="chips chips-autocomplete"></div>
       <script>
-       document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.autocomplete');
-    var instances = M.Autocomplete.init(elems, options);
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.chips');
+    var instances = M.Chips.init(elems, options);
   });
-
 
   // Or with jQuery
 
-  $(document).ready(function(){
-    $('input.autocomplete').autocomplete({
+  $('.chips').chips();
+  $('.chips-initial').chips({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+  $('.chips-placeholder').chips({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').chips({
+    autocompleteOptions: {
       data: {
-        "Apple": null,
-        "Microsoft": null,
-        "Google": 'https://placehold.it/250x250'
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
       },
-    });
+      limit: Infinity,
+      minLength: 1
+    }
   });
       </script>
       <!--JavaScript at end of body for optimized loading-->
