@@ -8,8 +8,8 @@
 	$(document).ready(function(){
 		$("button").click(function(){
 			$.post("https://demo.thingsboard.io:443/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry",{
-				"Station":"Tin Shui Wai",
-				"Status":"Safe"
+				Station:"Tin Shui Wai",
+				Status:"Safe"
 			},
 			function(data,status){
 				alert("数据: \n" + data + "\n状态: " + status);
