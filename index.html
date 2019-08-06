@@ -10,26 +10,26 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <h3>Reports</h3>
+      <h3>Reportss</h3>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-<form enctype='application/json' action="https://postman-echo.com/post" method="post" novalidate="novalidate" name="myData">
+<form action="https://postman-echo.com/post" method="post" novalidate="novalidate" enctype="application/json" >
 <p>
       <label>
-        <input name="Status" type="radio" checked />
+        <input name="Status1" type="radio" checked value="myVal1"/>
         <span>"Safe"</span>
       </label>
 
       <label>
-        <input name="Status" type="radio" />
+        <input name="Status2" type="radio"  value="myVal2"/>
         <span>Police</span>
       </label>
 
       <label>
-        <input class="with-gap" name="Status" type="radio"  />
+        <input class="with-gap" name="Status3" type="radio"  value="myVal3" />
         <span>Danger</span>
       </label>
  </p>
