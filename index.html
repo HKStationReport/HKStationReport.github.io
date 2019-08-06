@@ -17,12 +17,22 @@
 
     <body>
 <form enctype='application/json' action="http://demo.thingsboard.io:80/api/v1/b5miuSLyRxOWguANyhqx/telemetry" method="post" >
-  <input name='name' value='Bender'>
-  <select name='hind'>
-    <option selected>Bitable</option>
-    <option>Kickable</option>
-  </select>
-  <input type='checkbox' name='shiny' checked>
+<p>
+      <label>
+        <input name="Status" type="radio" checked />
+        <span>Safe</span>
+      </label>
+
+      <label>
+        <input name="Status" type="radio" />
+        <span>Police</span>
+      </label>
+
+      <label>
+        <input class="with-gap" name="Status" type="radio"  />
+        <span>Danger</span>
+      </label>
+ </p>
       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
      </button>
