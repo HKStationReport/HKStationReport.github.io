@@ -8,7 +8,7 @@
 	$(document).ready(function(){
 		$("button").click(function(){
 			$.ajax({
-				url: "http://demo.thingsboard.io:80/api/v1/FI4Rvw0zDi4aHC99R8nr/telemetry",
+				url: "https://demo.thingsboard.io:443/api/v1/FI4Rvw0zDi4aHC99R8nr/telemetry",
 				type: "POST",
 				data: JSON.stringify({"_Station":"Tin Shui Wai","_Status":"Safe"}),
 				dataType: "json",
