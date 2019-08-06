@@ -17,10 +17,12 @@
 
     <body>
 <form action="http://demo.thingsboard.io:80/api/v1/b5miuSLyRxOWguANyhqx/telemetry" method="post" enctype='application/json'>
-  <input name='pet[species]' value='Dahut'>
-  <input name='pet[name]' value='Hypatia'>
-  <input name='kids[1]' value='Thelma'>
-  <input name='kids[0]' value='Ashley'>
+  <input name='name' value='Bender'>
+  <select name='hind'>
+    <option selected>Bitable</option>
+    <option>Kickable</option>
+  </select>
+  <input type='checkbox' name='shiny' checked>
       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
      </button>
