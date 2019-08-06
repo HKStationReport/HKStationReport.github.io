@@ -23,7 +23,7 @@
         function processForm( e ){
             $.ajax({
                 url: 'https://postman-echo.com/post',
-                dataType: 'text',
+                dataType: 'json',
                 type: 'post',
                 contentType: 'application/json',
                 data: $(this).serialize(),
