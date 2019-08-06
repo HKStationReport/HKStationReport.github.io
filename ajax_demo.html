@@ -7,13 +7,15 @@
 	<script>
 	$(document).ready(function(){
 		$("button").click(function(){
-			$.post("https://postman-echo.com/post",{
-				_Station:"Tin Shui Wai",
-				_Status:"Safe"
-			},
-			function(data,status){
-				alert("数据: \n" + data + "\n状态: " + status);
-			},"json");
+			$.ajax({
+				url: "https://demo.thingsboard.io:443/api/v1/FI4Rvw0zDi4aHC99R8nr/telemetry",
+				type: "POST",
+				data: JSON.stringify({"_Station":"Tin Shui Wai","_Status":"Safe"}),
+				dataType: "json",
+				contentType: "application/json",
+				success: function (result){ alert(JSON.stringify(result));},
+				error: function (xhr, ajaxOptions, thrownError){alert("error");}
+			});
 		});
 	});
 	</script>
