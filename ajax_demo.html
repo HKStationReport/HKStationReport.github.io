@@ -5,31 +5,31 @@
     <meta charset="utf-8">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>
-		function loadDoc() {
-		  var xhttp = new XMLHttpRequest();
-// 		  xhttp.onreadystatechange = function() {
-// 		    if (this.readyState == 4 && this.status == 200) {
-// 		     document.getElementById("demo").innerHTML = this.responseText;
-// 		    }
-// 		  };
-		xhttp.open("POST", "https://demo.thingsboard.io:443/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry", false);
-		xhttp.setRequestHeader("Content-type", "application/json");
-			alert("{\"_Station\":\"Tin Shui Wai\",\"_Status\":\"Safe\"}");
-		xhttp.send("{_Station:\"Tin Shui Wai\",_Status:\"Safe\"}"); 
-		} 
-// 	$(document).ready(function(){
-// 		$("button").click(function(){
-// 			$.ajax({
-// 				url: "https://demo.thingsboard.io:443/api/v1/FI4Rvw0zDi4aHC99R8nr/telemetry",
-// 				type: "POST",
-// 				data: JSON.stringify({"_Station":"Tin Shui Wai","_Status":"Safe"}),
-// 				dataType: "json",
-// 				contentType: "application/json",
-// 				success: function (result){ alert(JSON.stringify(result));},
-// 				error: function (xhr, ajaxOptions, thrownError){alert("error");}
-// 			});
-// 		});
-// 	});
+// 		function loadDoc() {
+// 		  var xhttp = new XMLHttpRequest();
+// // 		  xhttp.onreadystatechange = function() {
+// // 		    if (this.readyState == 4 && this.status == 200) {
+// // 		     document.getElementById("demo").innerHTML = this.responseText;
+// // 		    }
+// // 		  };
+// 		xhttp.open("POST", "https://demo.thingsboard.io:443/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry", false);
+// 		xhttp.setRequestHeader("Content-type", "application/json");
+// 			alert("{\"_Station\":\"Tin Shui Wai\",\"_Status\":\"Safe\"}");
+// 		xhttp.send("{_Station:\"Tin Shui Wai\",_Status:\"Safe\"}"); 
+// 		} 
+	$(document).ready(function(){
+		$("button").click(function(){
+			$.ajax({
+				url: "https://demo.thingsboard.io:443/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry",
+				type: "POST",
+				data: {_Station:"Tin Shui Wai",_Status:"Safe"},
+				dataType: "json",
+				contentType: "application/json",
+				success: function (result){ alert(JSON.stringify(result));},
+				error: function (xhr, ajaxOptions, thrownError){alert("error");}
+			});
+		});
+	});
 	</script>
 </head>
 <body>
