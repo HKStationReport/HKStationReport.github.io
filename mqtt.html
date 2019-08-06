@@ -3,17 +3,17 @@
 
 <script>
 
-console.log('Connecting to: %s using access token: %s', process.env.THINGSBOARD_HOST, process.env.ACCESS_TOKEN);
+console.log('Connecting to: %s using access token: %s', process.env.demo.thingsboard.io, process.env.VdmXEJGmafDt4ag8IcTJ);
 
-var client  = mqtt.connect('mqtt://'+ process.env.THINGSBOARD_HOST,{
-    username: process.env.ACCESS_TOKEN
+var client  = mqtt.connect('mqtt://'+ process.env.demo.thingsboard.io,{
+    username: process.env.VdmXEJGmafDt4ag8IcTJ
 });
 
 client.on('connect', function () {
     console.log('Client connected!');
-    client.publish('v1/devices/me/attributes', process.env.ATTRIBUTES);
-    console.log('Attributes published!');
-    client.publish('v1/devices/me/telemetry', process.env.TELEMETRY);
+//     client.publish('v1/devices/me/attributes', process.env.ATTRIBUTES);
+//     console.log('Attributes published!');
+    client.publish('v1/devices/me/telemetry', "{\"temperature\":21, \"humidity\":55.0, \"active\": false}");
     console.log('Telemetry published!');
     client.end();
 });
