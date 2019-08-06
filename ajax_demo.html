@@ -7,12 +7,12 @@
 	<script>
 		function loadDoc() {
 		  var xhttp = new XMLHttpRequest();
-		  xhttp.onreadystatechange = function() {
-		    if (this.readyState == 4 && this.status == 200) {
-		     document.getElementById("demo").innerHTML = this.responseText;
-		    }
-		  };
-		xhttp.open("POST", "https://demo.thingsboard.io:443/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry", true);
+// 		  xhttp.onreadystatechange = function() {
+// 		    if (this.readyState == 4 && this.status == 200) {
+// 		     document.getElementById("demo").innerHTML = this.responseText;
+// 		    }
+// 		  };
+		xhttp.open("POST", "https://demo.thingsboard.io:443/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry", false);
 		xhttp.setRequestHeader("Content-type", "application/json");
 		xhttp.send("{\"_Station\":\"Tin Shui Wai\",\"_Status\":\"Safe\"}"); 
 		} 
