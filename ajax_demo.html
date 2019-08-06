@@ -19,27 +19,17 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
-    (function($){
-        function processForm( e ){
-            $.ajax({
-                url: 'https://demo.thingsboard.io:443/api/v1/FI4Rvw0zDi4aHC99R8nr/telemetry',
-                dataType: 'json',
-                type: 'post',
-                contentType: 'application/json',
-                data: $(this).serialize(),
-                success: function( data, textStatus, jQxhr ){
-                    $('#response pre').html( data );
-                },
-                error: function( jqXhr, textStatus, errorThrown ){
-                    console.log( errorThrown );
-                }
-            });
-
-            e.preventDefault();
-        }
-
-        $('#my-form').submit( processForm );
-    })(jQuery);
+$(document).ready(function(){
+	$("button").click(function(){
+		$.post("/try/ajax/demo_test_post.php",{
+			name:"菜鸟教程",
+			url:"http://www.runoob.com"
+		},
+		function(data,status){
+			alert("数据: \n" + data + "\n状态: " + status);
+		});
+	});
+});
 </script>
 </body>
 </html>
