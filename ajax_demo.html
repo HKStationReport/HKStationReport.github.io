@@ -25,7 +25,7 @@
                 url: 'https://postman-echo.com/post',
                 dataType: 'text',
                 type: 'post',
-                contentType: 'application/x-www-form-urlencoded',
+                contentType: 'application/json',
                 data: $(this).serialize(),
                 success: function( data, textStatus, jQxhr ){
                     $('#response pre').html( data );
