@@ -18,7 +18,7 @@ fetch(url, {
   method: "POST",
   body:  JSON.stringify(data),  
   headers: myHeaders,
-  mode: "no-cors"
+  mode: "cors"
 }).then(res => res.json())
 .catch(error => console.error('Error:', error))
 .then(response => console.log('Success:', response));
