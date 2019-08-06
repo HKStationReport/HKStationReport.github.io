@@ -3,6 +3,20 @@
 <head>
     <title>jQuery AJAX POST Form</title>
     <meta charset="utf-8">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$.post("/try/ajax/demo_test_post.php",{
+				name:"菜鸟教程",
+				url:"http://www.runoob.com"
+			},
+			function(data,status){
+				alert("数据: \n" + data + "\n状态: " + status);
+			});
+		});
+	});
+	</script>
 </head>
 <body>
 
@@ -17,19 +31,8 @@
     <button type="submit">Submit</button>
 </form>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-	$("button").click(function(){
-		$.post("/try/ajax/demo_test_post.php",{
-			name:"菜鸟教程",
-			url:"http://www.runoob.com"
-		},
-		function(data,status){
-			alert("数据: \n" + data + "\n状态: " + status);
-		});
-	});
-});
-</script>
+
+
+<button>发送一个 HTTP POST 请求页面并获取返回内容</button>
 </body>
 </html>
