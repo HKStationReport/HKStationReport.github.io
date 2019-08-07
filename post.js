@@ -46,7 +46,13 @@ fetch(url, {
   mode: "no-cors"
 }).then(res => res.json())
 .catch(error => console.error('Error:', error))
-.then(response => console.log('Success:', response);
+.then(response => function(){
+  console.log('Success:', response);
+  window.history.back();
+});
+
+
+//.then(response => console.log('Success:', response);
  
 
 //window.location.replace("https://hkstationreport.github.io/");
