@@ -45,7 +45,7 @@ var locationGPSBotList =
 "Tin Shui Wai, Tin Yip Road Park":{"GPS":{"Lat":4477,"Long":00400000000002},"BotToken":"aaaaaaaaaaa"},
 */
 
-var keys = Object.keys(locationGPSBotList); //not work
+var keys = Object.keys(locationGPSBotList); 
 //console.log('keys contains ' + keys.length + ' keys: '+  keys);
 var autoComplete = {};
 for(var i = 0; i < keys.length; i++){
