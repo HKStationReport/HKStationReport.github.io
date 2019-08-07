@@ -17,14 +17,14 @@ var locationGPSBotList =
 
 }
 
-// var autoComplete = Object.keys(locationGPSBotList); //not work
-// console.log('obj contains ' + autoComplete.length + ' keys: '+  autoComplete);
+var keys = Object.keys(locationGPSBotList); //not work
+console.log('obj contains ' + keys.length + ' keys: '+  keys);
 
+var autoComplete[keys] = null;
 
-
-var autoComplete = {
-        "Tin Shui Wai": null,
-        "Yuen Long": null,
-        "Siu Hong": null,
-        "Long Ping": 'https://placehold.it/250x250'
-        }
+// var autoComplete = {
+//         "Tin Shui Wai": null,
+//         "Yuen Long": null,
+//         "Siu Hong": null,
+//         "Long Ping": 'https://placehold.it/250x250'
+//         }
