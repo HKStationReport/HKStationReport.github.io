@@ -22,4 +22,4 @@ var autoComplete = {
         "Yuen Long": null,
         "Siu Hong": null,
         "Long Ping": 'https://placehold.it/250x250'
-        };
+        }
