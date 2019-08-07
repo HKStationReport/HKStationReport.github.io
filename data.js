@@ -46,13 +46,8 @@ var locationGPSBotList =
 */
 
 var keys = Object.keys(locationGPSBotList); //not work
-console.log('keys contains ' + keys.length + ' keys: '+  keys);
-console.log(keys[0]);
-
-
-
+//console.log('keys contains ' + keys.length + ' keys: '+  keys);
 var autoComplete = {};
-
 for(var i = 0; i < keys.length; i++){
   autoComplete[keys[i]] = null;
 }
