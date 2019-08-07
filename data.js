@@ -1,4 +1,4 @@
-var locationGPSBotList = 
+v[ar locationGPSBotList = 
 
 {
 
@@ -24,7 +24,7 @@ console.log(keys[0]);
 
 
 var autoComplete = {};
-autoComplete.push(keys, null);
+autoComplete.push(keys[0], null);
 
 // var autoComplete = {
 //         "Tin Shui Wai": null,
