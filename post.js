@@ -1,4 +1,4 @@
-var url = 'http://demo.thingsboard.io:80/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry';
+var url = 'https://demo.thingsboard.io:443/api/v1/VdmXEJGmafDt4ag8IcTJ/telemetry';
 //var data = {"username": "example"};
 var data = {"Station":"Tin Shui Wai","Latitude":22.4477,"Longitude":114.00400000000002,"Status":"Police","Comment":"TSW hi comment here"};
 var myHeaders = new Headers();
