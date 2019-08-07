@@ -20,7 +20,9 @@ var locationGPSBotList =
 var keys = Object.keys(locationGPSBotList); //not work
 console.log('keys contains ' + keys.length + ' keys: '+  keys);
 
-var autoComplete[keys] = null;
+
+var autoComplete;
+autoComplete[keys] = null;
 
 // var autoComplete = {
 //         "Tin Shui Wai": null,
