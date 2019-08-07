@@ -15,7 +15,7 @@ var locationGPSBotList =
   "East Tsim Sha Tsui":{"GPS":{"Lat":22.29483422136273,"Long":114.17341947555542},"BotToken":""},
   "Hung Hom":{"GPS":{"Lat":22.30335114793344,"Long":114.18144464492798},"BotToken":""}
 
-}
+};
 
 var keys = Object.keys(locationGPSBotList); //not work
 console.log('keys contains ' + keys.length + ' keys: '+  keys);
