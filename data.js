@@ -31,7 +31,7 @@ var autoComplete = {
         };
 
 for(var i = 0; i < keys.length; i++){
-  autoComplete.keys[i] = null;
+  autoComplete[keys[i]] = null;
 }
 console.log(autoComplete);
 
