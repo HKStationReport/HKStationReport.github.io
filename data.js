@@ -20,9 +20,9 @@ var locationGPSBotList =
 var keys = Object.keys(locationGPSBotList);
 console.log('obj contains ' + keys.length + ' keys: '+  keys);
 
-var autoComplete = {
-        "Tin Shui Wai": null,
-        "Yuen Long": null,
-        "Siu Hong": null,
-        "Long Ping": 'https://placehold.it/250x250'
-        }
+// var autoComplete = {
+//         "Tin Shui Wai": null,
+//         "Yuen Long": null,
+//         "Siu Hong": null,
+//         "Long Ping": 'https://placehold.it/250x250'
+//         }
