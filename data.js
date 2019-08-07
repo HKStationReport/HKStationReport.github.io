@@ -24,7 +24,11 @@ console.log(keys[0]);
 
 
 var autoComplete = {};
-autoComplete.push(keys[0], null);
+
+for(var i = 0; i < keys.length; i++){
+  autoComplete.push(keys[i], null);
+}
+
 
 // var autoComplete = {
 //         "Tin Shui Wai": null,
