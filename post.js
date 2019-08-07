@@ -48,4 +48,4 @@ fetch(url, {
 .catch(error => console.error('Error:', error))
 .then(response => console.log('Success:', response));
 
-window.location.replace("http://demo.thingsboard.io/dashboard/9a829f20-b3f2-11e9-ba32-f5b5eb6632aa?publicId=c0423b30-b730-11e9-ad5e-55c0cbba5705");
+//window.location.replace("http://demo.thingsboard.io/dashboard/9a829f20-b3f2-11e9-ba32-f5b5eb6632aa?publicId=c0423b30-b730-11e9-ad5e-55c0cbba5705");
