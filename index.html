@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -47,17 +46,12 @@
     <i class="material-icons right">send</i>
      </button>
 </form>
-
-
-<script>
+  
+<script src="data.js">
           // Or with jQuery
 $(document).ready(function(){
     $('input.autocomplete_Station').autocomplete({
-      data: {
-        "Tin Shui Wai": null,
-        "Yuen Long": null,
-        "Long Ping": 'https://placehold.it/250x250'
-      },
+      data: autoComplete,
     });
   });
 </script>
