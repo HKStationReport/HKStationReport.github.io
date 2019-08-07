@@ -1,4 +1,4 @@
-v[ar locationGPSBotList = 
+var locationGPSBotList = 
 
 {
 
