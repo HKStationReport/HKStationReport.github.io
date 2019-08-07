@@ -23,12 +23,7 @@ console.log(keys[0]);
 
 
 
-var autoComplete = {
-        "Tin Shui Wai": null,
-        "Yuen Long": null,
-        "Siu Hong": null,
-        "Long Ping": 'https://placehold.it/250x250'
-        };
+var autoComplete = {};
 
 for(var i = 0; i < keys.length; i++){
   autoComplete[keys[i]] = null;
@@ -41,5 +36,3 @@ console.log(autoComplete);
 //         "Siu Hong": null,
 //         "Long Ping": 'https://placehold.it/250x250'
 //         };
-
-console.log(autoComplete);
