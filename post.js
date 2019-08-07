@@ -46,7 +46,7 @@ fetch(url, {
   mode: "no-cors"
 }).then(res => res.json())
 .catch(error => console.error('Error:', error))
-.then(response => 
-      window.location.replace("https://hkstationreport.github.io/"));
+.then(response => console.log('Success:', response);
+ 
 
-//
+//window.location.replace("https://hkstationreport.github.io/");
