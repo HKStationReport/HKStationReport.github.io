@@ -47,3 +47,5 @@ fetch(url, {
 }).then(res => res.json())
 .catch(error => console.error('Error:', error))
 .then(response => console.log('Success:', response));
+
+window.location.replace("http://www.w3schools.com");
