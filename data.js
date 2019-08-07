@@ -17,7 +17,7 @@ var locationGPSBotList =
 
 }
 
-autoComplete = {
+var autoComplete = {
         "Tin Shui Wai": null,
         "Yuen Long": null,
         "Siu Hong": null,
