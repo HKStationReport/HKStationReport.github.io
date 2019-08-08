@@ -46,10 +46,9 @@ fetch(url, {
   mode: "no-cors"
 }).then(res => res.json())
 .catch(error => console.error('Error:', error))
-.then(response => function(){
-  console.log('Success:', response);
-  window.history.back();
-});
+.then(function(response) {
+    console.log(response);
+  });
 
 
 //.then(response => console.log('Success:', response);
