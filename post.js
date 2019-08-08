@@ -48,8 +48,14 @@ fetch(url, {
 .catch(error => console.error('Error:', error))
 .then(function(response) {
     console.log(response);
-    alert("backing");
-    //window.history.back();
+    con=confirm("Report more? Y = Back to report page, N = Go to Dashboard"); //在页面上弹出对话框 
+    if(con==true){
+      window.history.back();
+    }
+    else{
+      window.location.replace("http://demo.thingsboard.io/dashboard/9a829f20-b3f2-11e9-ba32-f5b5eb6632aa?publicId=c0423b30-b730-11e9-ad5e-55c0cbba5705");
+    } 
+    
   });
 
 
