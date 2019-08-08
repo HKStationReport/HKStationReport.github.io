@@ -16,9 +16,9 @@ var locationGPSBotList =
   "Hung Hom":{"GPS":{"Lat":22.30335114793344,"Long":114.18144464492798},"BotToken":"1N7z5PS17WQ6OTMFzrY4"}
 
 };
-
+//
 /*
-"Tin Shui Wai Police Station":{"GPS":{"Lat":22.449879563238113,"Long":114.00237398494641},"BotToken":"aaaaaa"},
+"Tin Shui Wai, Police Station":{"GPS":{"Lat":22.449879563238113,"Long":114.00237398494641},"BotToken":"aaaaaa"},
 "Tin Shui Wai, Tin Shing Court":{"GPS":{"Lat":22.447929025913765,"Long":114.00175981558277},"BotToken":"aaaaaaaa"},
 "Tin Shui Wai, Tin Yiu Estate":{"GPS":{"Lat":22.451380539608827,"Long":114.00476938283111},"BotToken":"aaaaaaaaaaa"},
 "Tin Shui Wai, Tin Tsz Estate":{"GPS":{"Lat":22.45295383939372,"Long":114.00767349068417},"BotToken":"aaaaaaaa"},
@@ -42,7 +42,7 @@ var locationGPSBotList =
 "Tin Shui Wai, Kenswood Court":{"GPS":{"Lat":22.458331781416962,"Long":114.00593161582947},"BotToken":"aaaaaaaaaaa"},
 "Tin Shui Wai, Maywood Court":{"GPS":{"Lat":22.461266630398462,"Long":114.0061891078949},"BotToken":"aaaaaaaaaaa"},
 "Tin Shui Wai, Lynwood Court":{"GPS":{"Lat":22.460433774165277,"Long":114.00403261184692},"BotToken":"aaaaaaaaaaa"},
-"Tin Shui Wai, Tin Yip Road Park":{"GPS":{"Lat":4477,"Long":00400000000002},"BotToken":"aaaaaaaaaaa"},
+"Tin Shui Wai, Tin Yip Road Park":{"GPS":{"Lat":22.4635503,"Long":114.0071871},"BotToken":"aaaaaaaaaaa"},
 */
 
 var keys = Object.keys(locationGPSBotList); 
