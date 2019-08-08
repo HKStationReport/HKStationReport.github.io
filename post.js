@@ -49,9 +49,7 @@ fetch(url, {
 .then(function(response) {
     console.log(response);
     window.location.replace("https://hkstationreport.github.io/?submit=ok");
-    } 
-    
-  });
+ });
 
 
 //.then(response => console.log('Success:', response);
