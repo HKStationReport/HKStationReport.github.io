@@ -2,7 +2,7 @@
   <html>
     <head>
      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
+      <script src="./getData.js"></script>
       <!--Import materialize.css-->
 <!--       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -45,6 +45,11 @@
       <button class="btn waves-effect waves-light" type="submit">Submit
     <i class="material-icons right">send</i>
      </button>
+  <script>
+  if(URL2JSON['sumbit']=="ok"){
+      document.write("Submited");
+  }
+  </script>
 </form>
   
   
