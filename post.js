@@ -49,7 +49,7 @@ fetch(url, {
 .catch(error => console.error('Error:', error))
 .then(function(response) {
     console.log(response);
-    console.log("backing");
+    alert("backing");
     window.history.back();
   });
 
