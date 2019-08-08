@@ -48,7 +48,7 @@ fetch(url, {
 .catch(error => console.error('Error:', error))
 .then(function(response) {
     console.log(response);
-    window.location.replace("https://hkstationreport.github.io/?submit=ok&msg=Submitted "+urlJSON['Station']+" is "+urlJSON['Status']);
+    window.location.replace("https://hkstationreport.github.io/?submit=ok&msg=Submitted "+urlJSON['Station']+" --> "+urlJSON['Status']);
  });
 
 
