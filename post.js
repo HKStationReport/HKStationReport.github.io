@@ -1,4 +1,3 @@
-
 console.log(urlJSON['Station']);
 console.log(urlJSON['Status']);
 console.log(urlJSON['Comment']);
@@ -50,7 +49,7 @@ fetch(url, {
 .then(function(response) {
     console.log(response);
     alert("backing");
-    window.history.back();
+    //window.history.back();
   });
 
 
