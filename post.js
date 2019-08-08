@@ -1,3 +1,4 @@
+
 console.log(urlJSON['Station']);
 console.log(urlJSON['Status']);
 console.log(urlJSON['Comment']);
@@ -48,6 +49,8 @@ fetch(url, {
 .catch(error => console.error('Error:', error))
 .then(function(response) {
     console.log(response);
+    console.log("backing");
+    window.history.back();
   });
 
 
