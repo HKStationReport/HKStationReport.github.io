@@ -26,7 +26,11 @@ var locationGPSBotList =
 "Tin Shui Wai, Sherwood Court":{"GPS":{"Lat":22.453991624828298,"Long":114.00210626420585},"BotToken":"CuJ7IODJ0AT9swWTeAw5"},
 "Tin Shui Wai, Tin Chak Estate":{"GPS":{"Lat":22.467856900632487,"Long":113.99797158576439},"BotToken":"JpdsWaqG8wudSV0XOHht"},
 "Tin Shui Wai, Tin Chung Estate":{"GPS":{"Lat":22.460796119975544,"Long":113.99933047494278},"BotToken":"C38EW1oaWZmg7bdsMTMw"},
-"Tin Shui Wai, Tin Shing Court":{"GPS":{"Lat":22.447929025913765,"Long":114.00175981558277},"BotToken":"R2SPRAhIk9sO2IaFjbEF"},
+"Tin Shui Wai, Tin Shing Court":{"GPS":{"Lat":22.447929025913765,"Long":114.00175981558277},"BotToken":"R2SPRAhIk9sO2IaFjbEF"}
+
+};
+//
+/*
 "Tin Shui Wai, Tin Shui Estate":{"GPS":{"Lat":22.455878906749575,"Long":113.9980166207149},"BotToken":"dwjkcaUZx34zlkPcbGPo"},
 "Tin Shui Wai, Tin Tsz Estate":{"GPS":{"Lat":22.45295383939372,"Long":114.00767349068417},"BotToken":"koXBT4rJT5KGJGNIlNgz"},
 "Tin Shui Wai, Tin Wah Estate":{"GPS":{"Lat":22.460511668621663,"Long":113.99577484038116},"BotToken":"E1ga6ORIA3QBKl0SR57C"},
@@ -39,10 +43,6 @@ var locationGPSBotList =
 "Tin Shui Wai, Tin Heng Estate":{"GPS":{"Lat":22.470499094055736,"Long":114.00000561692627},"BotToken":"7J4zZNKhLiEpiSgkZ5cW"},
 "Tin Shui Wai, Tin Fu Estate":{"GPS":{"Lat":22.464758664055772,"Long":113.9997358583081},"BotToken":"x84mU57RklttkRXcehqd"},
 "Tin Shui Wai, Tin Pak Road Park":{"GPS":{"Lat":22.457022977376155,"Long":114.0068382024765},"BotToken":"FiWdKxeoPORLWJLfTM8F"}
-};
-//
-/*
-
 */
 
 var keys = Object.keys(locationGPSBotList); 
