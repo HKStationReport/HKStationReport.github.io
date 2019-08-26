@@ -1,6 +1,7 @@
 document.write("Test2");
 
-var url = 'http://worldclockapi.com/api/json/utc/now';
+//var url = 'http://worldclockapi.com/api/json/utc/now';
+var url = 'https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today';
 var UTC;
 //console.log(getTime());
 var d = new Date();
